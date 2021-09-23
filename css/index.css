@@ -1,0 +1,627 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: teal; /*#642a73*/
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*CABECERA*/
+header{
+    width: 100%;
+    height: 600px;
+    background: #005AA7;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(56, 100%, 95%, 0.678), hsla(208, 100%, 33%, 0.664)), url(/img/portada.jpeg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(56, 100%, 95%, 0.678), hsla(208, 100%, 33%, 0.664)), url(/img/portada.jpeg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+    float: right;
+}
+
+nav > a{
+    color:#000;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*ABOUT US*/
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background:darkgreen;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0 0 30px 15px;
+    font-weight:300;
+    text-align: justify;
+}
+
+/*Galeria*/
+
+.portafolio{
+    background: #f2f2f2;
+    
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    
+   
+}
+
+.imagen-port{
+    width: 60%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+    flex-direction: column;
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria:hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(130, 94%, 20%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*CLIENTES*/
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: teal;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow:0 0 6px 0 rgba(0,0,0,.6);
+
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card >.contenido-texto-card{
+    width: 60%;
+    color: #fff;
+    
+}
+
+.cards .card >.contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*NUESTROS SERVICIOS*/
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.servicio-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin:10px 0;
+}
+
+.servicio-ind p{
+    text-align: justify;
+    font-weight: 300;
+}
+
+/*Footer*/
+
+footer{
+    background:teal;
+    padding:60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+
+}
+
+.content-foo h4{
+    color: white;
+    border-bottom: 3px solid olivedrab;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: white;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color:hsla(56, 100%, 95%, 0.678)
+}
+
+/*FORMULARIO DE CONTACTO*/
+
+.content{
+    margin: 30px 60px;
+    width: 1000px;
+    margin: 0 auto;
+    border-top-width: 0;
+
+}
+
+.content p{
+    text-align: justify;
+    color: black;
+    padding-top: 50px;
+   /* width: 1000px;*/
+}
+
+.content label{
+    display: block;
+    font-size: 16px;
+    font-weight: 900;
+
+}
+
+.form-contact{
+    margin-top: 20px;
+    color: black;
+}
+
+.form-contact a{
+    color: black;
+    text-decoration: none;
+}
+
+.form-contact a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.control{
+    width: 400px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid #cecaca;
+    padding: 14px 12px;
+    margin: 8px 0;
+}
+
+.button{
+    background: teal;
+    border: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+    padding: 20px 60px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+/*BOTONES DE REDES SOCIALES*/
+:root{
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --twitter: #55acee;
+    --pinterest: #bd081c;
+    --linkedin: #0077b5;
+}
+
+.redes-container{
+    display: flex;
+    height: 25vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-container ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.redes-container ul li a{
+    display: block;
+    padding: 0 10px;
+    background: #333;
+    color: white;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+
+.redes-container ul:hover a{
+    filter: blur(2px);
+}
+
+.redes-container ul li a:hover{
+    transform: translateX(-3px) scale(1.5);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .4);
+    filter: none;
+}
+
+.redes-container ul li .facebook:hover{
+    background: var(--facebook);
+}
+
+.redes-container ul li .instagram:hover{
+    background: var(--instagram);
+}
+
+.redes-container ul li .twitter:hover{
+    background: var(--twitter);
+}
+
+.redes-container ul li .pinterest:hover{
+    background: var(--pinterest);
+}
+
+.redes-container ul li .linkedin:hover{
+    background: var(--linkedin);
+}
+
+/*MAILING*/
+
+.mailing{
+    background: #f2f2f2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.mailing .ingresa-tu-email{
+    margin: 20px;
+    padding: 20px 60px;
+}
+
+.btn-registrar{
+    background: teal;
+    border: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+    padding: 20px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/*RECETA*/
+
+.img-cr{
+    max-width: 400px;
+    padding-left: 400px;
+}
+
+.ingredientes-receta{
+    text-align: center;
+    
+}
+
+.descripción-receta{
+    text-align: center;
+}
+
+/***********************MEDIA QUERYS***********************/
+
+@media screen and (max-width:900px) {
+
+    *{
+        margin:0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+        margin-top: 30px;
+
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .content{
+        width: 90%;
+    }
+
+}
+
+
+@media screen and (max-width:500px) {
+
+    *{
+        margin:0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+        margin-top: 30px;
+
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+       height: 450px;
+       align-items: center;
+       flex-direction: column;
+       display: flex;
+    }
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .content{
+        width: 90%;
+    }
+
+    .form-contact{
+        width: 60%;
+    }
+
+    .control{
+        width: 95%;
+    }
+
+    .ingresa-tu-email{
+        width: 85%;
+    }
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .redes-container{
+        flex-direction: column;
+        justify-content: center;
+        margin: 15px 15px 15px 15px;
+    }
+
+    
+}
